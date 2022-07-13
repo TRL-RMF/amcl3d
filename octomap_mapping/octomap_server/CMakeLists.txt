@@ -68,6 +68,10 @@ target_link_libraries(octomap_saver ${PROJECT_NAME} ${LINK_LIBS})
 add_executable(octomap_tracking_server_node src/octomap_tracking_server_node.cpp)
 target_link_libraries(octomap_tracking_server_node ${PROJECT_NAME} ${LINK_LIBS})
 
+# Mod by Selva, 29.06.2022 for BT Map generation
+# ADD_EXECUTABLE(octree2pointcloud octree2pointcloud.cpp)
+# TARGET_LINK_LIBRARIES(octree2pointcloud octomap)
+
 # Nodelet
 add_library(octomap_server_nodelet src/octomap_server_nodelet.cpp)
 target_link_libraries(octomap_server_nodelet ${PROJECT_NAME} ${LINK_LIBS})

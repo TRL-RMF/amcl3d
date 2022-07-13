@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="pcl_ros" type="pcd_to_pointcloud" name="spawn_pcd_to_pcl" output="screen" args ="/media/caato2/data/lvlM.bag_points.pcd 0.1" >
+    <param name="frame_id" value="/map" />
+    <remap from="cloud_pcd" to="cloud_in" />
+    </node>
+</launch>
+
+
+
